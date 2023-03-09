@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:language_name",
+ "creation": "2023-03-09 23:38:07.233351",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "language_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "language_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Language Name",
+   "options": "Language",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-09 23:48:02.367196",
+ "modified_by": "Administrator",
+ "module": "Realestate",
+ "name": "Language Spoken",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

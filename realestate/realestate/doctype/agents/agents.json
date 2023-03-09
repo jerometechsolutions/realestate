@@ -3,6 +3,7 @@
  "allow_guest_to_view": 1,
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "format:{first_name}-{middle_name}-{last_name}-{company}",
  "creation": "2023-03-09 22:16:26.975464",
  "default_view": "List",
  "doctype": "DocType",
@@ -95,8 +96,9 @@
   },
   {
    "fieldname": "languages",
-   "fieldtype": "Data",
+   "fieldtype": "Table MultiSelect",
    "label": "Languages",
+   "options": "Language Spoken",
    "reqd": 1
   },
   {
@@ -139,10 +141,11 @@
  "is_published_field": "published",
  "links": [],
  "max_attachments": 10,
- "modified": "2023-03-09 22:36:20.097765",
+ "modified": "2023-03-09 23:49:32.777308",
  "modified_by": "Administrator",
  "module": "Realestate",
  "name": "Agents",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
