@@ -97,8 +97,9 @@
   {
    "fieldname": "languages",
    "fieldtype": "Table MultiSelect",
+   "ignore_user_permissions": 1,
    "label": "Languages",
-   "options": "Language Spoken",
+   "options": "Language Speak",
    "reqd": 1
   },
   {
@@ -141,7 +142,7 @@
  "is_published_field": "published",
  "links": [],
  "max_attachments": 10,
- "modified": "2023-03-09 23:49:32.777308",
+ "modified": "2023-03-10 01:55:14.687137",
  "modified_by": "Administrator",
  "module": "Realestate",
  "name": "Agents",
@@ -162,9 +163,12 @@
   }
  ],
  "route": "agents",
+ "search_fields": "first_name",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "first_name",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1
