@@ -20,6 +20,7 @@
   "phone",
   "mobile",
   "whatsapp",
+  "linkedin",
   "image",
   "section_break_8gpys",
   "company",
@@ -144,7 +145,7 @@
   },
   {
    "fieldname": "about_me",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "label": "About Me",
    "reqd": 1
   },
@@ -182,6 +183,11 @@
   {
    "fieldname": "section_break_t0vyb",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "linkedin",
+   "fieldtype": "Data",
+   "label": "LinkedIn"
   }
  ],
  "has_web_view": 1,
@@ -190,7 +196,7 @@
  "is_published_field": "published",
  "links": [],
  "max_attachments": 10,
- "modified": "2023-03-10 19:18:32.911279",
+ "modified": "2023-03-10 19:40:00.494901",
  "modified_by": "Administrator",
  "module": "Realestate",
  "name": "Agents",
