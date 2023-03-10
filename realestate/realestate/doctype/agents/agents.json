@@ -14,21 +14,24 @@
   "middle_name",
   "last_name",
   "languages",
+  "brn",
   "column_break_rub7u",
   "email",
   "phone",
   "mobile",
   "whatsapp",
+  "image",
   "section_break_8gpys",
   "company",
   "job_position",
   "website",
   "address",
   "column_break_qmjut",
-  "image",
+  "about_me",
   "section_break_ntjd7",
-  "route",
-  "published"
+  "published",
+  "column_break_2ib3b",
+  "route"
  ],
  "fields": [
   {
@@ -134,6 +137,22 @@
   {
    "fieldname": "section_break_ntjd7",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "about_me",
+   "fieldtype": "Text",
+   "label": "About Me",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brn",
+   "fieldtype": "Data",
+   "label": "BRN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2ib3b",
+   "fieldtype": "Column Break"
   }
  ],
  "has_web_view": 1,
@@ -142,7 +161,7 @@
  "is_published_field": "published",
  "links": [],
  "max_attachments": 10,
- "modified": "2023-03-10 01:55:14.687137",
+ "modified": "2023-03-10 19:04:24.164971",
  "modified_by": "Administrator",
  "module": "Realestate",
  "name": "Agents",
@@ -158,6 +177,16 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Agents",
    "share": 1,
    "write": 1
   }
