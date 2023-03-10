@@ -31,7 +31,11 @@
   "section_break_ntjd7",
   "published",
   "column_break_2ib3b",
-  "route"
+  "route",
+  "section_break_t0vyb",
+  "subscription",
+  "active_status",
+  "registration_status"
  ],
  "fields": [
   {
@@ -153,6 +157,31 @@
   {
    "fieldname": "column_break_2ib3b",
    "fieldtype": "Column Break"
+  },
+  {
+   "default": "Enabled",
+   "fieldname": "active_status",
+   "fieldtype": "Select",
+   "label": "Active Status",
+   "options": "Enabled\nDisabled"
+  },
+  {
+   "default": "Unpaid",
+   "fieldname": "subscription",
+   "fieldtype": "Select",
+   "label": "Subscription",
+   "options": "Paid\nUnpaid"
+  },
+  {
+   "default": "Unverified",
+   "fieldname": "registration_status",
+   "fieldtype": "Select",
+   "label": "Registration Status",
+   "options": "Verified\nUnverified"
+  },
+  {
+   "fieldname": "section_break_t0vyb",
+   "fieldtype": "Section Break"
   }
  ],
  "has_web_view": 1,
@@ -161,7 +190,7 @@
  "is_published_field": "published",
  "links": [],
  "max_attachments": 10,
- "modified": "2023-03-10 19:04:24.164971",
+ "modified": "2023-03-10 19:18:32.911279",
  "modified_by": "Administrator",
  "module": "Realestate",
  "name": "Agents",
