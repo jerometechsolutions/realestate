@@ -3,7 +3,7 @@
  "allow_guest_to_view": 1,
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:{first_name}-{middle_name}-{last_name}-{company}",
+ "autoname": "format:{first_name}-{last_name}-{company_name}",
  "creation": "2023-03-09 22:16:26.975464",
  "default_view": "List",
  "doctype": "DocType",
@@ -105,10 +105,8 @@
   {
    "fieldname": "languages",
    "fieldtype": "Table MultiSelect",
-   "ignore_user_permissions": 1,
    "label": "Languages",
-   "options": "Language Speak",
-   "reqd": 1
+   "options": "Language Speak"
   },
   {
    "fieldname": "image",
@@ -124,8 +122,7 @@
    "default": "0",
    "fieldname": "published",
    "fieldtype": "Check",
-   "label": "Published",
-   "reqd": 1
+   "label": "Published"
   },
   {
    "fieldname": "column_break_rub7u",
@@ -146,8 +143,7 @@
   {
    "fieldname": "about_me",
    "fieldtype": "Small Text",
-   "label": "About Me",
-   "reqd": 1
+   "label": "About Me"
   },
   {
    "fieldname": "brn",
@@ -196,7 +192,7 @@
  "is_published_field": "published",
  "links": [],
  "max_attachments": 10,
- "modified": "2023-03-10 19:40:00.494901",
+ "modified": "2023-03-12 16:43:43.455846",
  "modified_by": "Administrator",
  "module": "Realestate",
  "name": "Agents",
@@ -226,6 +222,8 @@
    "write": 1
   }
  ],
+ "read_only": 1,
+ "restrict_to_domain": "Realestate",
  "route": "agents",
  "search_fields": "first_name",
  "show_title_field_in_link": 1,

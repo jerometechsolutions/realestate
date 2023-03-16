@@ -1,0 +1,27 @@
+{
+ "content": null,
+ "creation": "2023-03-14 17:16:49.720671",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-03-14 17:16:49.720671",
+ "modified_by": "Administrator",
+ "module": "Realestate",
+ "name": "test",
+ "owner": "Administrator",
+ "page_name": "test",
+ "restrict_to_domain": "Realestate",
+ "roles": [
+  {
+   "role": "Agents"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Test"
+}
