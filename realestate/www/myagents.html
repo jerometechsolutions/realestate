@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File in PHP</title>    
+</head>
+<body>
+    <div class="form">
+        <input type="file" id="upload_file" accept="image/jpeg, image/png"/>
+        <button id="submit_button">Upload File</button>
+    </div>
+</body>
+</html>
+
+<script>
+
+    // predefined file types for validation
+var mime_types = [ 'image/jpeg', 'image/png' ];
+    
+    var submit_button = document.querySelector('#submit_button');
+        
+    submit_button.addEventListener('click', function() {
+        
+        // check if user has selected file OR not
+        var selected_file = document.querySelector('#upload_file');
+        if(selected_file.files.length == 0) {
+            alert('Please select file to upload.');
+            return;
+        }
+    
+        // Get the file uploaded
+        var file = selected_file.files[0];
+        
+        // validate MIME type
+        if(mime_types.indexOf(file.type) == -1) {
+            alert('Please select jpeg or png files only.');
+            return;
+        }
+    
+        // max 5 MB size allowed
+        if(file.size > 5*1024*1024) {
+            alert('Please select file having less than 5MB size.');
+            return;
+        }
+        let theUrl="https://jerometechsolutions.com/api/method/frappe.auth.get_logged_user"
+        httpGet(theUrl);
+        var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.setRequestHeader('Authorization', 'token fdb091ef847fa4c:7cb38fd74150fa6');
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+    /*
+        // upload file
+        var form_data = new FormData();
+    
+        // append selected file to the formData object
+        form_data.append('file', document.querySelector('#upload_file').files[0]);
+        
+        
+
+        var request = new XMLHttpRequest();
+        request.open('post', 'https://jerometechsolutions.com/api/resource/Employment Type'); 
+    
+        // send POST request to server
+        request.send(form_data);
+        */
+    });
+
+    function httpGet(theUrl)
+{
+    
+}
+</script>

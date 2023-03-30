@@ -192,7 +192,7 @@
  "is_published_field": "published",
  "links": [],
  "max_attachments": 10,
- "modified": "2023-03-12 16:43:43.455846",
+ "modified": "2023-03-25 14:57:09.276171",
  "modified_by": "Administrator",
  "module": "Realestate",
  "name": "Agents",
@@ -220,9 +220,17 @@
    "role": "Agents",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agents",
+   "share": 1
   }
  ],
- "read_only": 1,
  "restrict_to_domain": "Realestate",
  "route": "agents",
  "search_fields": "first_name",

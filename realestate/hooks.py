@@ -94,9 +94,12 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+#	"ToDo": "custom_app.overrides.realestate_class"
+  #  "BlogPost": "realestate.overrides.Realestateblogpost",
+    "Email Account":"realestate.overrides.realestateemail.RealestateEmail"
+    
+}
 
 # Document Events
 # ---------------

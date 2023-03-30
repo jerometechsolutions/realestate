@@ -1,0 +1,39 @@
+
+{% extends "templates/web.html" %}
+
+
+{% block title %}{{ _("Upload Property") }}{% endblock %}
+
+
+{% block page_content %}
+
+
+<div>
+<form name="myform" id="myform">
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" name="property_type" id="property_type" placeholder="Property Type">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" name="property_name" id="property_name" placeholder="Property Name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" name="property_description" id="property_description"
+                placeholder="Property Description">
+        </div>
+        <div class="col">
+            <input type="file" class="form-control" name="file" id="file" placeholder="Image">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col"><div id="output"></div></div>
+        <div class="col"><input type="submit" id="submit" name="submit"></div>
+
+
+    </div>
+</form>
+</div>
+{% endblock %}
+
